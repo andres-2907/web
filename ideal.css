@@ -1,0 +1,190 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #F7F8E7; /* Fondo suave que recuerda a alimentos naturales */
+    color: #333; /* Color de texto estándar */
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #8BC34A; /* Verde saludable */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-image: url('imagenes/'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(139, 195, 74, 0.7); /* Color verde difuminado */
+    z-index: 0;
+}
+
+header > div, nav {
+    position: relative;
+    z-index: 1;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFEB3B; /* Amarillo brillante */
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #4CAF50; /* Verde brillante para títulos */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #FFFFFF; /* Blanco puro para claridad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"], button[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #388E3C;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #E8F5E9;
+    border-left: 4px solid #4CAF50;
+    border-radius: 5px;
+}
+
+/* Estilo para la selección de dietas */
+.dieta {
+    font-weight: bold;
+    color: #FF5722; /* Naranja vivo para atraer atención */
+    margin-top: 20px;
+}
+
+#dieta-select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#verDieta {
+    background-color: #FF5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#verDieta:hover {
+    background-color: #E64A19;
+}
+
+#dieta {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFEBEE;
+    border-left: 4px solid #FF5722;
+    border-radius: 5px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .section {
+    margin-bottom: 20px;
+}
+
+footer .social-icons a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #FFEB3B;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #C8E6C9;
+}
+

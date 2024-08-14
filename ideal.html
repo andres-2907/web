@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEAL</title>
+    <link rel="stylesheet" href="ideal.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagenes/OIG1.jpeg" alt="Logotipo" width="200px" height="200px">
+        </div>
+        <div>
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="ideal.html">CALCULADORA</a>
+            </nav>                       
+        </div>
+    </header>
+    <main>
+        <div class="ingrese">
+            <h1>Calculadora de Peso Ideal</h1>
+            <form id="datos">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                
+                <label for="edad">Edad (años):</label>
+                <input type="number" id="edad" required>
+                
+                <label for="altura">Altura (cm):</label>
+                <input type="number" id="altura" required>
+
+                <label for="genero">Género:</label>
+                <select id="genero" required>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+
+                <button type="submit">Calcular</button>
+                <button type="button" id="limpiar">Limpiar</button>
+            </form>
+            <div id="resultado"></div>
+            
+            <!-- Selección de dieta -->
+            <label for="dieta-select" class="dieta">Selecciona una dieta:</label>
+            <select id="dieta-select">
+                <option value="">--Selecciona una dieta--</option>
+                <option value="perderPesoJoven">Dieta para Perder Peso (18-35 años)</option>
+                <option value="perderPesoAdulto">Dieta para Perder Peso (36-60 años)</option>
+                <option value="ganarMasaJoven">Dieta para Ganar Masa Muscular (18-35 años)</option>
+                <option value="ganarMasaAdulto">Dieta para Ganar Masa Muscular (36-60 años)</option>
+            </select>
+            <button id="verDieta">Mostrar Dieta</button>
+            <div id="dieta"></div>
+        </div>        
+    </main>
+    <footer>        
+            <div class="container">
+                <div class="section">
+                    <h3>Contacto</h3>
+                    <p>Dirección: 14 av zona 5, San Marcos, Guatemala</p>
+                    <p>Teléfono: +502 4520-7744</p>
+                    <p>Email: ochoamiacol726@gmail.com</p>
+                </div>
+                <div class="section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100070844691102&mibextid=ZbWKwL ">Facebook</a>                        
+                        <a href="https://www.instagram.com/andres_2906__?igsh=eml0aTN5aWZpNm5z">Instagram</a>                        
+                    </div>
+                </div>              
+            </div>
+            <div class="copyright">
+                &copy; 2024 NutriLak. Todos los derechos reservados.
+            </div>       
+    </footer>  
+    <script src="ideal.js"></script>  
+</body>
+</html>
